@@ -3,23 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sample Page</title>
+    <title>Tristar Embroid</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js"></script>
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body class="bg-black text-white">
-    <header class="fixed w-full bg-gradient-to-r from-[#050400] via-[#9f7400] to-[#050400] h-20 z-50 flex flex-col justify-center font-[Poppins]">
-        <nav class="container mx-auto px-6 py-3 flex justify-between items-center">
-            <a href="#" class="text-3xl font-medium text-white text-center">Tristar <br> Embroid</a>
-            <div class="hidden md:flex space-x-14 text-lg font-light uppercase">
+    <header class="fixed w-full bg-gradient-to-r from-[#050400] via-[#9f7400] to-[#050400] h-auto md:h-20 z-50 flex flex-col justify-center font-[Poppins]">
+        <nav class="container mx-auto px-4 py-3 flex flex-wrap justify-between items-center">
+            <a href="#" class="text-lg md:text-3xl font-medium text-white text-center">Tristar <br class="hidden md:block"> Embroid</a>
+            <div class="hidden md:flex space-x-4 lg:space-x-14 text-sm lg:text-lg font-light uppercase">
                 <a href="#services" class="hover:text-yellow-500">Home</a>
                 <a href="#about" class="hover:text-yellow-500">About</a>
                 <a href="#pricing" class="hover:text-yellow-500">Services</a>
                 <a href="#contact" class="hover:text-yellow-500">Prices</a>
                 <a href="#contact" class="hover:text-yellow-500">Portfolio</a>
             </div>
-            <div class="flex items-center justify-normal gap-x-2">
+            <div class="hidden md:flex items-center justify-normal gap-x-2">
                 <img src="https://www.tristarembroidery.net/new_website_assests/images/icons/Register.png" class="w-7" alt="">
                 <span class="text-white">ACCOUNT</span>
             </div>
@@ -27,7 +27,7 @@
                 <i class="fas fa-bars"></i>
             </button>
         </nav>
-        <div id="mobile-menu" class="hidden md:hidden bg-black">
+        <div id="mobile-menu" class="hidden md:hidden bg-black w-full">
             <a href="#services" class="block py-2 px-4 text-sm hover:bg-gray-700">Services</a>
             <a href="#about" class="block py-2 px-4 text-sm hover:bg-gray-700">About</a>
             <a href="#pricing" class="block py-2 px-4 text-sm hover:bg-gray-700">Pricing</a>
@@ -37,103 +37,103 @@
 
     <main>
         <section id="hero" class="h-screen flex items-center justify-center bg-cover bg-center" style="background-image: url('https://images.pexels.com/photos/235985/pexels-photo-235985.jpeg');">
-            <div class="text-center">
-                <h1 class="text-4xl md:text-6xl font-bold mb-4">MAIN HEADING</h1>
-                <p class="text-xl mb-8">There will be <span id="slogan" class="text-black uppercase font-bold">Slogan</span></p>
-                <div class="flex items-center justify-center text-2xl text-white font-semibold w-1/2 mx-auto border-2 border-white p-4 hover:border-yellow-500 hover:bg-yellow-500 transition-all cursor-pointer">
+            <div class="text-center px-4">
+                <h1 class="text-3xl md:text-4xl lg:text-6xl font-bold mb-4">MAIN HEADING</h1>
+                <p class="text-lg md:text-xl mb-8">There will be <span id="slogan" class="text-black uppercase font-bold">Slogan</span></p>
+                <div class="inline-flex items-center justify-center text-xl md:text-2xl text-white font-semibold border-2 border-white p-3 md:p-4 hover:border-yellow-500 hover:bg-yellow-500 transition-all cursor-pointer">
                     <span class="transform hover:scale-125 transition-transform duration-300 capitalize">get quote</span>
                 </div>
             </div>
         </section>
 
         <section id="services" class="py-16 bg-[#303030]">
-            <div class="container mx-auto px-6">
-                <h2 class="text-3xl font-bold mb-8 text-center">Our Services</h2>
+            <div class="container mx-auto px-4">
+                <h2 class="text-2xl md:text-3xl font-bold mb-8 text-center">Our Services</h2>
                 <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
                     <div class="text-center">
-                        <i class="fas fa-tshirt text-4xl text-yellow-500 mb-4"></i>
-                        <h3 class="text-xl font-semibold mb-2">Custom Embroidery</h3>
-                        <p>High-quality embroidery for your designs</p>
+                        <i class="fas fa-tshirt text-3xl md:text-4xl text-yellow-500 mb-4"></i>
+                        <h3 class="text-lg md:text-xl font-semibold mb-2">Custom Embroidery</h3>
+                        <p class="text-sm md:text-base">High-quality embroidery for your designs</p>
                     </div>
                     <div class="text-center">
-                        <i class="fas fa-pencil-alt text-4xl text-yellow-500 mb-4"></i>
-                        <h3 class="text-xl font-semibold mb-2">Design Services</h3>
-                        <p>Professional design creation and editing</p>
+                        <i class="fas fa-pencil-alt text-3xl md:text-4xl text-yellow-500 mb-4"></i>
+                        <h3 class="text-lg md:text-xl font-semibold mb-2">Design Services</h3>
+                        <p class="text-sm md:text-base">Professional design creation and editing</p>
                     </div>
                     <div class="text-center">
-                        <i class="fas fa-truck text-4xl text-yellow-500 mb-4"></i>
-                        <h3 class="text-xl font-semibold mb-2">Fast Turnaround</h3>
-                        <p>Quick production and delivery times</p>
+                        <i class="fas fa-truck text-3xl md:text-4xl text-yellow-500 mb-4"></i>
+                        <h3 class="text-lg md:text-xl font-semibold mb-2">Fast Turnaround</h3>
+                        <p class="text-sm md:text-base">Quick production and delivery times</p>
                     </div>
                 </div>
             </div>
         </section>
 
         <section id="about" class="py-16">
-            <div class="container mx-auto px-6">
+            <div class="container mx-auto px-4">
                 <div class="flex flex-col md:flex-row items-center">
                     <div class="md:w-1/2 mb-8 md:mb-0">
-                        <h2 class="text-3xl font-bold mb-4">About Us</h2>
-                        <p class="mb-4">Tristar Embroid has been providing top-quality embroidery services for over a decade. Our team of skilled professionals ensures that every project meets the highest standards of craftsmanship.</p>
-                        <p>We use state-of-the-art equipment and techniques to deliver exceptional results for our clients, from small businesses to large corporations.</p>
+                        <h2 class="text-2xl md:text-3xl font-bold mb-4">About Us</h2>
+                        <p class="mb-4 text-sm md:text-base">Tristar Embroid has been providing top-quality embroidery services for over a decade. Our team of skilled professionals ensures that every project meets the highest standards of craftsmanship.</p>
+                        <p class="text-sm md:text-base">We use state-of-the-art equipment and techniques to deliver exceptional results for our clients, from small businesses to large corporations.</p>
                     </div>
                     <div class="md:w-1/2 flex justify-center">
-                        <img src="https://v0.dev/placeholder.svg" alt="Embroidery samples" class="rounded-lg shadow-lg" width="400" height="300">
+                        <img src="https://v0.dev/placeholder.svg" alt="Embroidery samples" class="rounded-lg shadow-lg w-full max-w-md">
                     </div>
                 </div>
             </div>
         </section>
 
-        <section id="portfolio" class="py-24 bg-[#303030] w-full flex justify-between items-center gap-x-16">
-            <div class="h-full w-24 flex items-center justify-center pl-10">
-                <span class="text-7xl font-extralight bg-clip-text text-transparent bg-gradient-to-r from-white to-yellow-500 transform -rotate-90 text-nowrap z-10">
+        <section id="portfolio" class="py-16 md:py-24 bg-[#303030] w-full flex flex-col md:flex-row justify-between items-center gap-8 md:gap-x-16">
+            <div class="w-full md:w-24 flex items-center justify-center md:pl-10">
+                <span class="text-4xl md:text-7xl font-extralight bg-clip-text text-transparent bg-gradient-to-r from-white to-yellow-500 md:transform md:-rotate-90 text-nowrap z-10">
                     OUR PORTFOLIO
                 </span>
             </div>
-            <div class="mx-auto px-6">
+            <div class="w-full md:w-3/4 px-4 md:px-6">
                 <div class="relative">
                     <div class="slider-container overflow-hidden">
-                        <div class="slider grid grid-cols-1 md:grid-cols-3 gap-8 transition-transform duration-300" id="slider">
+                        <div class="slider grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 md:gap-8 transition-transform duration-300" id="slider">
                             <!-- Image 1 -->
                             <div class="relative group">
-                                <img src="https://c4.wallpaperflare.com/wallpaper/579/1/177/mobile-legends-chou-iori-yagami-hd-wallpaper-preview.jpg" alt="Portfolio item 1" class="rounded-lg shadow-lg w-full h-64 object-cover">
+                                <img src="https://c4.wallpaperflare.com/wallpaper/579/1/177/mobile-legends-chou-iori-yagami-hd-wallpaper-preview.jpg" alt="Portfolio item 1" class="rounded-lg shadow-lg w-full h-48 md:h-64 object-cover">
                                 <div class="absolute inset-0 flex items-center justify-center bg-black bg-opacity-50 opacity-0 transition-opacity duration-300 group-hover:opacity-100">
-                                    <span class="text-white text-xl font-semibold">Image 1 Description</span>
+                                    <span class="text-white text-lg md:text-xl font-semibold">Image 1 Description</span>
                                 </div>
                             </div>
                             <!-- Image 2 -->
                             <div class="relative group">
-                                <img src="https://wallpapercave.com/wp/wp2385441.jpg" alt="Portfolio item 2" class="rounded-lg shadow-lg w-full h-64 object-cover">
+                                <img src="https://wallpapercave.com/wp/wp2385441.jpg" alt="Portfolio item 2" class="rounded-lg shadow-lg w-full h-48 md:h-64 object-cover">
                                 <div class="absolute inset-0 flex items-center justify-center bg-black bg-opacity-50 opacity-0 transition-opacity duration-300 group-hover:opacity-100">
-                                    <span class="text-white text-xl font-semibold">Image 2 Description</span>
+                                    <span class="text-white text-lg md:text-xl font-semibold">Image 2 Description</span>
                                 </div>
                             </div>
                             <!-- Image 3 -->
                             <div class="relative group">
-                                <img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/a44778ea-3457-40e0-8979-b7e3685d23d0/dh9c0xx-89cf3bbd-c856-4d67-b3a4-b02faaeda63b.png/v1/fill/w_1920,h_1078,q_80,strp/paquito_kof_terry_skin_8k_wallpaper_by_newjer53_dh9c0xx-fullview.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9MTA3OCIsInBhdGgiOiJcL2ZcL2E0NDc3OGVhLTM0NTctNDBlMC04OTc5LWI3ZTM2ODVkMjNkMFwvZGg5YzB4eC04OWNmM2JiZC1jODU2LTRkNjctYjNhNC1iMDJmYWFlZGE2M2IucG5nIiwid2lkdGgiOiI8PTE5MjAifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6aW1hZ2Uub3BlcmF0aW9ucyJdfQ.ja02TE2tMF04rWq7njt20j_rOXliKV_6BOcalcT4SJU" alt="Portfolio item 3" class="rounded-lg shadow-lg w-full h-64 object-cover">
+                                <img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/a44778ea-3457-40e0-8979-b7e3685d23d0/dh9c0xx-89cf3bbd-c856-4d67-b3a4-b02faaeda63b.png/v1/fill/w_1920,h_1078,q_80,strp/paquito_kof_terry_skin_8k_wallpaper_by_newjer53_dh9c0xx-fullview.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9MTA3OCIsInBhdGgiOiJcL2ZcL2E0NDc3OGVhLTM0NTctNDBlMC04OTc5LWI3ZTM2ODVkMjNkMFwvZGg5YzB4eC04OWNmM2JiZC1jODU2LTRkNjctYjNhNC1iMDJmYWFlZGE2M2IucG5nIiwid2lkdGgiOiI8PTE5MjAifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6aW1hZ2Uub3BlcmF0aW9ucyJdfQ.ja02TE2tMF04rWq7njt20j_rOXliKV_6BOcalcT4SJU" alt="Portfolio item 3" class="rounded-lg shadow-lg w-full h-48 md:h-64 object-cover">
                                 <div class="absolute inset-0 flex items-center justify-center bg-black bg-opacity-50 opacity-0 transition-opacity duration-300 group-hover:opacity-100">
-                                    <span class="text-white text-xl font-semibold">Image 3 Description</span>
+                                    <span class="text-white text-lg md:text-xl font-semibold">Image 3 Description</span>
                                 </div>
                             </div>
                             <!-- Image 4 -->
                             <div class="relative group">
-                                <img src="https://i.pinimg.com/736x/f2/a2/54/f2a254329b69b42f085707b354702446.jpg" alt="Portfolio item 4" class="rounded-lg shadow-lg w-full h-64 object-cover">
+                                <img src="https://i.pinimg.com/736x/f2/a2/54/f2a254329b69b42f085707b354702446.jpg" alt="Portfolio item 4" class="rounded-lg shadow-lg w-full h-48 md:h-64 object-cover">
                                 <div class="absolute inset-0 flex items-center justify-center bg-black bg-opacity-50 opacity-0 transition-opacity duration-300 group-hover:opacity-100">
-                                    <span class="text-white text-xl font-semibold">Image 4 Description</span>
+                                    <span class="text-white text-lg md:text-xl font-semibold">Image 4 Description</span>
                                 </div>
                             </div>
                             <!-- Image 5 -->
                             <div class="relative group">
-                                <img src="https://i.pinimg.com/736x/55/80/52/55805262cba85001a8d5d196a647a410.jpg" alt="Portfolio item 5" class="rounded-lg shadow-lg w-full h-64 object-cover">
+                                <img src="https://i.pinimg.com/736x/55/80/52/55805262cba85001a8d5d196a647a410.jpg" alt="Portfolio item 5" class="rounded-lg shadow-lg w-full h-48 md:h-64 object-cover">
                                 <div class="absolute inset-0 flex items-center justify-center bg-black bg-opacity-50 opacity-0 transition-opacity duration-300 group-hover:opacity-100">
-                                    <span class="text-white text-xl font-semibold">Image 5 Description</span>
+                                    <span class="text-white text-lg md:text-xl font-semibold">Image 5 Description</span>
                                 </div>
                             </div>
                             <!-- Image 6 -->
                             <div class="relative group">
-                                <img src="https://c4.wallpaperflare.com/wallpaper/1013/1021/174/street-fighter-video-games-ken-ryu-wallpaper-preview.jpg" alt="Portfolio item 6" class="rounded-lg shadow-lg w-full h-64 object-cover">
+                                <img src="https://c4.wallpaperflare.com/wallpaper/1013/1021/174/street-fighter-video-games-ken-ryu-wallpaper-preview.jpg" alt="Portfolio item 6" class="rounded-lg shadow-lg w-full h-48 md:h-64 object-cover">
                                 <div class="absolute inset-0 flex items-center justify-center bg-black bg-opacity-50 opacity-0 transition-opacity duration-300 group-hover:opacity-100">
-                                    <span class="text-white text-xl font-semibold">Image 6 Description</span>
+                                    <span class="text-white text-lg md:text-xl font-semibold">Image 6 Description</span>
                                 </div>
                             </div>
                         </div>
@@ -141,150 +141,151 @@
         
                     <!-- Pagination -->
                     <div class="flex justify-center mt-4 space-x-2">
-                        <button id="prev" class="px-4 py-2 bg-yellow-500 text-black rounded-md hover:bg-yellow-600 transition">Prev</button>
-                        <button id="next" class="px-4 py-2 bg-yellow-500 text-black rounded-md hover:bg-yellow-600 transition">Next</button>
+                        <button id="prev" class="px-3 py-1 md:px-4 md:py-2 bg-yellow-500 text-black rounded-md hover:bg-yellow-600 transition">Prev</button>
+                        <button id="next" class="px-3 py-1 md:px-4 md:py-2 bg-yellow-500 text-black rounded-md hover:bg-yellow-600 transition">Next</button>
                     </div>
                 </div>
             </div>
         </section>
         
-        
         <section id="pricing" class="py-16">
-            <div class="w-4/5 mx-auto px-6">
-                <h2 class="text-3xl font-bold mb-8 text-center">Pricing Plans</h2>
-                <div class="grid grid-cols-1 md:grid-cols-3 gap-5">
-                    <div class="bg-gray-800 rounded-lg shadow-xl  w-full overflow-hidden">
+            <div class="w-full md:w-4/5 mx-auto px-4 md:px-6">
+                <h2 class="text-2xl md:text-3xl font-bold mb-8 text-center">Pricing Plans</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
+                    <div class="bg-gray-800 rounded-lg shadow-xl w-full overflow-hidden">
                         <div class="flex justify-center">
-                            <img src="https://wallshub.com/uploads/posts/2024-05/c82002cecb_muscular-goku-4k.webp" alt="Skull Logo" class="w-full object-cover">
+                            <img src="https://wallshub.com/uploads/posts/2024-05/c82002cecb_muscular-goku-4k.webp" alt="Skull Logo" class="w-full h-48 md:h-64 object-cover">
                         </div>
-                        <div class="p-6 space-y-6">
+                        <div class="p-4 md:p-6 space-y-4 md:space-y-6">
                             <div class="text-center">
-                                <h2 class="text-2xl font-bold text-white mb-2">Pricing Plan 1</h2>
-                                <p class="text-gray-400 mb-4">Flat Price for Cap/Chest Logos</p>
-                                <p class="text-4xl font-bold text-white">$25</p>
+                                <h2 class="text-xl md:text-2xl font-bold text-white mb-2">Pricing Plan 1</h2>
+                                <p class="text-gray-400 mb-2 md:mb-4">Flat Price for Cap/Chest Logos</p>
+                                <p class="text-3xl md:text-4xl font-bold text-white">$25</p>
                             </div>
-                            <div class="bg-gray-700 p-4 rounded">
-                                <p class="text-white text-center mb-2">Complex Designs:</p>
-                                <p class="text-yellow-500 text-center font-bold">Complex Design Starting From $30.</p>
+                            <div class="bg-gray-700 p-3 md:p-4 rounded">
+                                <p class="text-white text-center mb-1 md:mb-2">Complex Designs:</p>
+                                <p class="text-yellow-500 text-center font-bold text-sm md:text-base">Complex Design Starting From $30.</p>
                             </div>
                             <ul class="space-y-2">
-                                <li class="flex items-center text-green-500">
-                                    <svg class="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 20 20">
+                                <li class="flex items-center text-green-500 text-sm md:text-base">
+                                    <svg class="w-4 h-4 md:w-5 md:h-5 mr-2" fill="currentColor" viewBox="0 0 20 20">
                                         <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
                                     </svg>
                                     Free Revisions
                                 </li>
-                                <li class="flex items-center text-green-500">
-                                    <svg class="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 20 20">
+                                <li class="flex items-center text-green-500 text-sm md:text-base">
+                                    <svg class="w-4 h-4 md:w-5 md:h-5 mr-2" fill="currentColor" viewBox="0 0 20 20">
                                         <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
                                     </svg>
                                     Free Quotation
                                 </li>
-                                <li class="flex items-center text-green-500">
-                                    <svg class="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 20 20">
+                                <li class="flex items-center text-green-500 text-sm md:text-base">
+                                    <svg class="w-4 h-4 md:w-5 md:h-5 mr-2" fill="currentColor" viewBox="0 0 20 20">
                                         <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
                                     </svg>
                                     Access Forever From Your Account
                                 </li>
                             </ul>
                         </div>
-                        <div class="p-6">
-                            <button class="w-full bg-yellow-500 hover:bg-yellow-600 text-gray-900 font-bold py-3 px-4 rounded-lg transition duration-300 ease-in-out flex items-center justify-center">
+                        <div class="p-4 md:p-6">
+                            <button class="w-full bg-yellow-500 hover:bg-yellow-600 text-gray-900 font-bold py-2 md:py-3 px-4 rounded-lg transition duration-300 ease-in-out flex items-center justify-center text-sm md:text-base">
                                 GET STARTED
-                                <svg class="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <svg class="w-4 h-4 md:w-5 md:h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
                                 </svg>
                             </button>
                         </div>
                     </div>
-                    <div class="bg-gray-800 rounded-lg shadow-xl  w-full overflow-hidden">
+                    <div class="bg-gray-800 rounded-lg shadow-xl w-full overflow-hidden">
                         <div class="flex justify-center">
-                            <img src="https://wallpapers.com/images/hd/goku-4k-ultra-hd-charging-kamehameha-9dfjwfl5ug4kojgl.jpg" alt="Skull Logo" class="w-full object-cover">
+                            <img src="https://wallpapers.com/images/hd/goku-4k-ultra-hd-charging-kamehameha-9dfjwfl5ug4kojgl.jpg" alt="Skull Logo" class="w-full h-48 md:h-64 object-cover">
                         </div>
-                        <div class="p-6 space-y-6">
+                        <div class="p-4 md:p-6 space-y-4 md:space-y-6">
                             <div class="text-center">
-                                <h2 class="text-2xl font-bold text-white mb-2">Pricing Plan 2</h2>
-                                <p class="text-gray-400 mb-4">Flat Price for Cap/Chest Logos</p>
-                                <p class="text-4xl font-bold text-white">$25</p>
+                                <h2 class="text-xl md:text-2xl font-bold text-white mb-2">Pricing Plan 1</h2>
+                                <p class="text-gray-400 mb-2 md:mb-4">Flat Price for Cap/Chest Logos</p>
+                                <p class="text-3xl md:text-4xl font-bold text-white">$25</p>
                             </div>
-                            <div class="bg-gray-700 p-4 rounded">
-                                <p class="text-white text-center mb-2">Complex Designs:</p>
-                                <p class="text-yellow-500 text-center font-bold">Complex Design Starting From $30.</p>
+                            <div class="bg-gray-700 p-3 md:p-4 rounded">
+                                <p class="text-white text-center mb-1 md:mb-2">Complex Designs:</p>
+                                <p class="text-yellow-500 text-center font-bold text-sm md:text-base">Complex Design Starting From $30.</p>
                             </div>
                             <ul class="space-y-2">
-                                <li class="flex items-center text-green-500">
-                                    <svg class="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 20 20">
+                                <li class="flex items-center text-green-500 text-sm md:text-base">
+                                    <svg class="w-4 h-4 md:w-5 md:h-5 mr-2" fill="currentColor" viewBox="0 0 20 20">
                                         <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
                                     </svg>
                                     Free Revisions
                                 </li>
-                                <li class="flex items-center text-green-500">
-                                    <svg class="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 20 20">
+                                <li class="flex items-center text-green-500 text-sm md:text-base">
+                                    <svg class="w-4 h-4 md:w-5 md:h-5 mr-2" fill="currentColor" viewBox="0 0 20 20">
                                         <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
                                     </svg>
                                     Free Quotation
                                 </li>
-                                <li class="flex items-center text-green-500">
-                                    <svg class="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 20 20">
+                                <li class="flex items-center text-green-500 text-sm md:text-base">
+                                    <svg class="w-4 h-4 md:w-5 md:h-5 mr-2" fill="currentColor" viewBox="0 0 20 20">
                                         <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
                                     </svg>
                                     Access Forever From Your Account
                                 </li>
                             </ul>
                         </div>
-                        <div class="p-6">
-                            <button class="w-full bg-yellow-500 hover:bg-yellow-600 text-gray-900 font-bold py-3 px-4 rounded-lg transition duration-300 ease-in-out flex items-center justify-center">
+                        <div class="p-4 md:p-6">
+                            <button class="w-full bg-yellow-500 hover:bg-yellow-600 text-gray-900 font-bold py-2 md:py-3 px-4 rounded-lg transition duration-300 ease-in-out flex items-center justify-center text-sm md:text-base">
                                 GET STARTED
-                                <svg class="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <svg class="w-4 h-4 md:w-5 md:h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
                                 </svg>
                             </button>
                         </div>
                     </div>
-                    <div class="bg-gray-800 rounded-lg shadow-xl  w-full overflow-hidden">
+                    <div class="bg-gray-800 rounded-lg shadow-xl w-full overflow-hidden">
                         <div class="flex justify-center">
-                            <img src="https://motionbgs.com/media/4068/silver-goku.jpg" alt="Skull Logo" class="w-full object-cover">
+                            <img src="https://motionbgs.com/media/4068/silver-goku.jpg" alt="Skull Logo" class="w-full h-48 md:h-64 object-cover">
                         </div>
-                        <div class="p-6 space-y-6">
+                        <div class="p-4 md:p-6 space-y-4 md:space-y-6">
                             <div class="text-center">
-                                <h2 class="text-2xl font-bold text-white mb-2">Pricing Plan 3</h2>
-                                <p class="text-gray-400 mb-4">Flat Price for Cap/Chest Logos</p>
-                                <p class="text-4xl font-bold text-white">$25</p>
+                                <h2 class="text-xl md:text-2xl font-bold text-white mb-2">Pricing Plan 1</h2>
+                                <p class="text-gray-400 mb-2 md:mb-4">Flat Price for Cap/Chest Logos</p>
+                                <p class="text-3xl md:text-4xl font-bold text-white">$25</p>
                             </div>
-                            <div class="bg-gray-700 p-4 rounded">
-                                <p class="text-white text-center mb-2">Complex Designs:</p>
-                                <p class="text-yellow-500 text-center font-bold">Complex Design Starting From $30.</p>
+                            <div class="bg-gray-700 p-3 md:p-4 rounded">
+                                <p class="text-white text-center mb-1 md:mb-2">Complex Designs:</p>
+                                <p class="text-yellow-500 text-center font-bold text-sm md:text-base">Complex Design Starting From $30.</p>
                             </div>
                             <ul class="space-y-2">
-                                <li class="flex items-center text-green-500">
-                                    <svg class="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 20 20">
+                                <li class="flex items-center text-green-500 text-sm md:text-base">
+                                    <svg class="w-4 h-4 md:w-5 md:h-5 mr-2" fill="currentColor" viewBox="0 0 20 20">
                                         <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
                                     </svg>
                                     Free Revisions
                                 </li>
-                                <li class="flex items-center text-green-500">
-                                    <svg class="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 20 20">
+                                <li class="flex items-center text-green-500 text-sm md:text-base">
+                                    <svg class="w-4 h-4 md:w-5 md:h-5 mr-2" fill="currentColor" viewBox="0 0 20 20">
                                         <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
                                     </svg>
                                     Free Quotation
                                 </li>
-                                <li class="flex items-center text-green-500">
-                                    <svg class="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 20 20">
+                                <li class="flex items-center text-green-500 text-sm md:text-base">
+                                    <svg class="w-4 h-4 md:w-5 md:h-5 mr-2" fill="currentColor" viewBox="0 0 20 20">
                                         <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
                                     </svg>
                                     Access Forever From Your Account
                                 </li>
                             </ul>
                         </div>
-                        <div class="p-6">
-                            <button class="w-full bg-yellow-500 hover:bg-yellow-600 text-gray-900 font-bold py-3 px-4 rounded-lg transition duration-300 ease-in-out flex items-center justify-center">
+                        <div class="p-4 md:p-6">
+                            <button class="w-full bg-yellow-500 hover:bg-yellow-600 text-gray-900 font-bold py-2 md:py-3 px-4 rounded-lg transition duration-300 ease-in-out flex items-center justify-center text-sm md:text-base">
                                 GET STARTED
-                                <svg class="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <svg class="w-4 h-4 md:w-5 md:h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
                                 </svg>
                             </button>
                         </div>
                     </div>
+
+                    <!-- Repeat the above structure for Pricing Plan 2 and 3 -->
                 </div>
             </div>
         </section>
@@ -294,16 +295,15 @@
         <div class="container mx-auto px-4 py-8">
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
                 <!-- Logo and Description -->
-                <div class="col-span-1 md:col-span-2 lg:col-span-1 space-y-8">
-                    <!-- <img src="https://v0.dev/placeholder.svg" alt="TriStar Embroidery Logo" class="h-12 mb-4"> -->
-                     <h1 class="text-5xl font-semibold text-white">LOGO</h1>
-                    <p class="text-sm mb-4">TristarEmb is the embroidery digitizing services provider which offers the best embroidery digitizing, vector art and custom patches services with fastest turnaround time and extra ordinary quality.</p>
+                <div class="col-span-1 md:col-span-2 lg:col-span-1 space-y-4 md:space-y-8">
+                    <h1 class="text-4xl md:text-5xl font-semibold text-white">LOGO</h1>
+                    <p class="text-xs md:text-sm mb-4">TristarEmb is the embroidery digitizing services provider which offers the best embroidery digitizing, vector art and custom patches services with fastest turnaround time and extra ordinary quality.</p>
                 </div>
 
                 <!-- Quick Links 1 -->
                 <div>
-                    <h3 class="text-lg font-semibold mb-4">QUICK LINKS</h3>
-                    <ul class="space-y-2">
+                    <h3 class="text-base md:text-lg font-semibold mb-4">QUICK LINKS</h3>
+                    <ul class="space-y-2 text-sm md:text-base">
                         <li><a href="#" class="hover:text-yellow-500 transition duration-300">HOME</a></li>
                         <li><a href="#" class="hover:text-yellow-500 transition duration-300">ABOUT US</a></li>
                         <li><a href="#" class="hover:text-yellow-500 transition duration-300">DIGITIZING SERVICES</a></li>
@@ -315,8 +315,8 @@
 
                 <!-- Quick Links 2 -->
                 <div>
-                    <h3 class="text-lg font-semibold mb-4">QUICK LINKS</h3>
-                    <ul class="space-y-2">
+                    <h3 class="text-base md:text-lg font-semibold mb-4">QUICK LINKS</h3>
+                    <ul class="space-y-2 text-sm md:text-base">
                         <li><a href="#" class="hover:text-yellow-500 transition duration-300">PRICING</a></li>
                         <li><a href="#" class="hover:text-yellow-500 transition duration-300">CONTACT US</a></li>
                         <li><a href="#" class="hover:text-yellow-500 transition duration-300">PRIVACY POLICY</a></li>
@@ -328,33 +328,33 @@
 
                 <!-- Contact Details -->
                 <div>
-                    <h3 class="text-lg font-semibold mb-4">CONTACT DETAILS</h3>
-                    <p class="mb-2">PHONE: +1 213 261 7530</p>
-                    <p class="mb-2">EMAIL: INFO@TRISTAREMB.COM</p>
-                    <p class="mb-2">SKYPE: INFO@TRISTAREMB.COM</p>
-                    <p class="text-sm mt-4">POWERED BY TRISTAR</p>
+                    <h3 class="text-base md:text-lg font-semibold mb-4">CONTACT DETAILS</h3>
+                    <p class="mb-2 text-sm md:text-base">PHONE: +1 213 261 7530</p>
+                    <p class="mb-2 text-sm md:text-base">EMAIL: INFO@TRISTAREMB.COM</p>
+                    <p class="mb-2 text-sm md:text-base">SKYPE: INFO@TRISTAREMB.COM</p>
+                    <p class="text-xs md:text-sm mt-4">POWERED BY TRISTAR</p>
                 </div>
             </div>
 
             <!-- Payment Methods -->
             <div class="mt-8 border-t border-gray-700 pt-8">
-                <h3 class="text-lg font-semibold mb-4 text-center">PAYMENT METHODS</h3>
+                <h3 class="text-base md:text-lg font-semibold mb-4 text-center">PAYMENT METHODS</h3>
                 <div class="flex flex-wrap justify-center gap-4">
-                    <img src="https://www.tristarembroidery.net/new_website_assests/images/payment_icon/2CheckOut.jpg" alt="2CO" class="h-8">
-                    <img src="https://www.tristarembroidery.net/new_website_assests/images/payment_icon/American_Express.png" alt="American Express" class="h-8">
-                    <img src="https://www.tristarembroidery.net/new_website_assests/images/payment_icon/discover.png" alt="Discover" class="h-8">
-                    <img src="https://www.tristarembroidery.net/new_website_assests/images/payment_icon/JCB.png" alt="JCB" class="h-8">
-                    <img src="https://www.tristarembroidery.net/new_website_assests/images/payment_icon/mastercard.png" alt="MasterCard" class="h-8">
-                    <img src="https://www.tristarembroidery.net/new_website_assests/images/payment_icon/Paypal.png" alt="PayPal" class="h-8">
-                    <img src="https://www.tristarembroidery.net/new_website_assests/images/payment_icon/stripe.png" alt="Stripe" class="h-8">
-                    <img src="https://www.tristarembroidery.net/new_website_assests/images/payment_icon/Visa.png" alt="Visa" class="h-8">
+                    <img src="https://www.tristarembroidery.net/new_website_assests/images/payment_icon/2CheckOut.jpg" alt="2CO" class="h-6 md:h-8">
+                    <img src="https://www.tristarembroidery.net/new_website_assests/images/payment_icon/American_Express.png" alt="American Express" class="h-6 md:h-8">
+                    <img src="https://www.tristarembroidery.net/new_website_assests/images/payment_icon/discover.png" alt="Discover" class="h-6 md:h-8">
+                    <img src="https://www.tristarembroidery.net/new_website_assests/images/payment_icon/JCB.png" alt="JCB" class="h-6 md:h-8">
+                    <img src="https://www.tristarembroidery.net/new_website_assests/images/payment_icon/mastercard.png" alt="MasterCard" class="h-6 md:h-8">
+                    <img src="https://www.tristarembroidery.net/new_website_assests/images/payment_icon/Paypal.png" alt="PayPal" class="h-6 md:h-8">
+                    <img src="https://www.tristarembroidery.net/new_website_assests/images/payment_icon/stripe.png" alt="Stripe" class="h-6 md:h-8">
+                    <img src="https://www.tristarembroidery.net/new_website_assests/images/payment_icon/Visa.png" alt="Visa" class="h-6 md:h-8">
                 </div>
             </div>
         </div>
 
         <!-- Copyright -->
         <div class="bg-yellow-700 py-4">
-            <p class="text-center text-sm">2024 ©TristarEmb, All right reserved.</p>
+            <p class="text-center text-xs md:text-sm">2024 ©TristarEmb, All right reserved.</p>
         </div>
     </footer>
 </body>
