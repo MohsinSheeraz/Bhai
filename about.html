@@ -25,13 +25,20 @@
         >
           <a href="/index.html" class="hover:text-[#eff6e0]">Home</a>
           <a href="#about" class="hover:text-[#eff6e0]">About</a>
-          <a href="#pricing" class="hover:text-[#eff6e0]">Services</a>
+          <div class="relative" id="dropdown">
+            <div class="complex-dropdown-container" id="uniqueDropdownId123">
+              <span class="hoverable-trigger-text-xyz cursor-pointer" id="triggerText987">Services</span>
+              <div class="dropdown-content-abc hidden-content-def" id="dropdownContent456">
+                <p class="dropdown-item-text-qwe">Hello World!</p>
+              </div>
+            </div>
+          </div>
           <a href="#contact" class="hover:text-[#eff6e0]">Prices</a>
-          <a href="#contact" class="hover:text-[#eff6e0]">Portfolio</a>
+          <a href="#portfolio" class="hover:text-[#eff6e0]">Portfolio</a>
         </div>
         <div class="hidden md:flex items-center justify-normal gap-x-2">
           <img
-            src="https://www.SabionEmbroideryroidery.net/new_website_assests/images/icons/Register.png"
+            src="https://www.SabionEmbroidery.net/new_website_assests/images/icons/Register.png"
             class="w-7"
             alt=""
           />
@@ -45,6 +52,19 @@
         <a href="#services" class="block py-2 px-4 text-sm hover:bg-gray-700"
           >Services</a
         >
+        <div class="pl-4">
+          <a
+            href="#digitizing"
+            class="block py-2 px-4 text-sm hover:bg-gray-700"
+            >Digitizing</a
+          >
+          <a href="#vector" class="block py-2 px-4 text-sm hover:bg-gray-700"
+            >Vector</a
+          >
+          <a href="#patches" class="block py-2 px-4 text-sm hover:bg-gray-700"
+            >Patches</a
+          >
+        </div>
         <a href="#about" class="block py-2 px-4 text-sm hover:bg-gray-700"
           >About</a
         >
@@ -100,7 +120,9 @@
         <div
           class="w-full lg:w-4/5 grid grid-cols-1 lg:grid-cols-3 mx-auto justify-center gap-4 lg:gap-8 rounded-lg"
         >
-          <div class="space-y-6 rounded-2xl bg-gray-900">
+          <div
+            class="space-y-6 rounded-2xl bg-gray-900 flex flex-col justify-between"
+          >
             <img
               src="/assets/Images/About/Crafting_excellence.jpg"
               class="w-full rounded-2xl"
