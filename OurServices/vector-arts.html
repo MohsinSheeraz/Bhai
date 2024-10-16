@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vector Arts | ~ Sabion Embroidery</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js"></script>
+    <link rel="stylesheet" href="/assets/css/style.css" />
+  </head>
+  <body class="bg-black text-white">
+    <header
+      class="fixed w-full bg-[#01161e] h-auto md:h-20 z-50 flex flex-col justify-center border-0"
+    >
+      <nav
+        class="container mx-auto px-4 py-3 flex flex-wrap justify-between items-center"
+      >
+        <a
+          href="/index.html"
+          class="text-lg md:text-2xl font-medium text-white text-center"
+          >Sabion Embroidery</a
+        >
+        <div
+          class="hidden md:flex space-x-4 lg:space-x-14 text-sm lg:text-base font-light uppercase"
+        >
+          <a href="/index.html" class="hover:text-[#eff6e0]">Home</a>
+          <a href="/about.html" class="hover:text-[#eff6e0]">About</a>
+          <div class="complex-dropdown-container" id="uniqueDropdownId123">
+            <span class="hoverable-trigger-text-xyz" id="triggerText987"
+              >Services</span
+            >
+            <div
+              class="dropdown-content-abc hidden-content-def"
+              id="dropdownContent456"
+            >
+              <a
+                href="/OurServices/embroidery-digitizing.html"
+                class="dropdown-item-text-qwe block py-2"
+                >Digitizing</a
+              >
+              <a
+                href="/OurServices/vector-arts.html"
+                class="dropdown-item-text-qwe block py-2"
+                >Vector</a
+              >
+              <a
+                href="/OurServices/custom-embroidery-patches.html"
+                class="dropdown-item-text-qwe block py-2"
+                >Patches</a
+              >
+            </div>
+          </div>
+          <a href="#contact" class="hover:text-[#eff6e0]">Prices</a>
+          <a href="#portfolio" class="hover:text-[#eff6e0]">Portfolio</a>
+        </div>
+        <div class="hidden md:flex items-center justify-normal gap-x-2">
+          <img
+            src="https://www.SabionEmbroidery.net/new_website_assests/images/icons/Register.png"
+            class="w-7"
+            alt=""
+          />
+          <span class="text-white">ACCOUNT</span>
+        </div>
+        <button id="menu-btn" class="md:hidden text-white">
+          <i class="fas fa-bars"></i>
+        </button>
+      </nav>
+      <div id="mobile-menu" class="hidden md:hidden bg-black w-full">
+        <a href="#services" class="block py-2 px-4 text-sm hover:bg-gray-700"
+          >Services</a
+        >
+        <div class="pl-4">
+          <a
+            href="#digitizing"
+            class="block py-2 px-4 text-sm hover:bg-gray-700"
+            >Digitizing</a
+          >
+          <a href="#vector" class="block py-2 px-4 text-sm hover:bg-gray-700"
+            >Vector</a
+          >
+          <a href="#patches" class="block py-2 px-4 text-sm hover:bg-gray-700"
+            >Patches</a
+          >
+        </div>
+        <a href="#about" class="block py-2 px-4 text-sm hover:bg-gray-700"
+          >About</a
+        >
+        <a href="#pricing" class="block py-2 px-4 text-sm hover:bg-gray-700"
+          >Pricing</a
+        >
+        <a href="#contact" class="block py-2 px-4 text-sm hover:bg-gray-700"
+          >Contact</a
+        >
+      </div>
+    </header>
+
+    <main>
+      <section
+        id="hero"
+        class="h-[50vh] flex items-center justify-center bg-cover bg-center"
+        style="
+          background-image: url('/assets/Images/OurServices/VectorServices/bannerbackground.png');
+        "
+      >
+        <div
+          class="flex items-center justify-center w-full h-full bg-[#0000009f]"
+        >
+          <div class="text-center px-4 space-y-5 w-3/5 mx-auto">
+            <h1
+              class="text-3xl md:text-4xl lg:text-6xl font-normal mb-4 uppercase"
+            >
+              VECTOR SERVICES
+            </h1>
+
+            <div class="breadcrumbs text-white text-center text-sm">
+              <span class="font-semibold">HOME</span> / VECTOR SERVICES
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="py-24 p-8 space-y-6">
+        <div class="w-full lg:w-1/2 mx-auto space-y-9">
+          <h1 class="capitalize text-center text-white font-medium text-2xl">
+            VECTOR SERVICES
+          </h1>
+          <p class="text-sm text-center">
+            At Sabion Embroidery, we specialize in providing comprehensive
+            vector services, transforming your images and designs into
+            versatile, high-quality vector formats. Our expertise includes
+            raster to vector conversion, logo vectorization, custom vector
+            artwork creation, and meticulous vector editing and enhancement. We
+            ensure your graphics are scalable and maintain their clarity and
+            detail at any size, perfect for printing, digital media, and various
+            other applications. With a commitment to precision and creativity,
+            our skilled designers deliver exceptional vector solutions tailored
+            to your specific needs, enhancing your visual projects and ensuring
+            they stand out with professional, polished results.
+          </p>
+        </div>
+      </section>
+
+      <section id="rastertovector" class="py-16">
+        <div class="mx-auto px-4 w-full lg:w-4/5">
+          <div class="flex flex-col md:flex-row items-center gap-16">
+            <div class="w-full md:w-1/2 mb-8 md:mb-0 space-y-5">
+              <h2 class="text-2xl md:text-3xl font-medium mb-4">
+                RASTER TO VECTOR CONVERSION
+              </h2>
+              <p class="mb-4 text-sm md:text-xs text-justify">
+                Our raster to vector conversion service expertly transforms
+                pixel-based images into crisp, clean vector graphics. Ideal for
+                logos, artwork, and detailed designs, this process ensures your
+                images can be scaled to any size without losing quality. Our
+                skilled designers use advanced software to meticulously trace
+                and convert your images, preserving every detail and color.
+                Whether you need your artwork for large-format printing, laser
+                cutting, or digital use, our conversion service guarantees
+                superior results that meet your needs.
+              </p>
+            </div>
+            <div class="w-full lg:w-1/2 flex justify-center">
+              <img
+                src="/assets/Images/OurServices/VectorServices/rasterimage.jpg"
+                alt="sabionAboutImg"
+                class="w-10/12 mx-auto rounded-lg"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="logoVectorization" class="py-16">
+        <div class="mx-auto px-4 w-full lg:w-4/5">
+          <div class="flex flex-col md:flex-row items-center gap-16">
+            <div class="w-full lg:w-1/2 flex justify-center">
+              <img
+                src="/assets/Images/OurServices/VectorServices/Logo.jpg"
+                alt="sabionAboutImg"
+                class="w-10/12 mx-auto rounded-lg"
+              />
+            </div>
+            <div class="md:w-1/2 mb-8 md:mb-0 space-y-5">
+              <h2 class="text-2xl md:text-3xl font-medium mb-4">
+                LOGO VECTORIZATION
+              </h2>
+              <p class="mb-4 text-sm md:text-xs text-justify">
+                Our logo vectorization service is dedicated to converting your
+                existing logos into high-quality vector formats. This process
+                ensures that your logo retains its clarity and sharpness at any
+                size, making it perfect for everything from business cards to
+                billboards. Our expert team carefully redraws your logo,
+                maintaining brand integrity and attention to detail. With our
+                logo vectorization, you'll have a versatile, scalable logo that
+                looks professional in any application.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="vectorArtwork" class="py-16">
+        <div class="mx-auto px-4 w-full lg:w-4/5">
+          <div class="flex flex-col md:flex-row items-center gap-16">
+            <div class="w-full md:w-1/2 mb-8 md:mb-0 space-y-5">
+              <h2 class="text-2xl md:text-3xl font-medium mb-4">
+                VECTOR ARTWORK CREATION
+              </h2>
+              <p class="mb-4 text-sm md:text-xs text-justify">
+                Our vector artwork creation service offers custom-designed
+                vector graphics tailored to your specific needs. Whether you
+                require unique illustrations for branding, marketing materials,
+                or personal projects, our talented designers bring your vision
+                to life with precision and creativity. Using industry-leading
+                software, we create scalable, high-quality vector artwork that
+                stands out and makes an impact. Trust us to deliver original
+                designs that meet your exact specifications and enhance your
+                visual presence.
+              </p>
+            </div>
+            <div class="w-full lg:w-1/2 flex justify-center">
+              <img
+                src="/assets/Images/OurServices/VectorServices/artwork.jpg"
+                alt="sabionAboutImg"
+                class="w-10/12 mx-auto rounded-lg"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="editingEnhancement" class="py-16">
+        <div class="mx-auto px-4 w-full lg:w-4/5">
+          <div class="flex flex-col md:flex-row items-center gap-16">
+            <div class="w-full lg:w-1/2 flex justify-center">
+              <img
+                src="/assets/Images/OurServices/VectorServices/Editing&Enhancement.jpg"
+                alt="sabionAboutImg"
+                class="w-10/12 mx-auto rounded-lg"
+              />
+            </div>
+            <div class="md:w-1/2 mb-8 md:mb-0 space-y-5">
+              <h2 class="text-2xl md:text-3xl font-medium mb-4">
+                VECTOR EDITING AND ENHANCEMENT
+              </h2>
+              <p class="mb-4 text-sm md:text-xs text-justify">
+                Our vector editing and enhancement service specializes in
+                refining and improving your existing vector files. We
+                meticulously adjust details, clean up lines, and enhance colors
+                to ensure your vectors are of the highest quality. Whether you
+                need minor tweaks or significant modifications, our skilled
+                designers work diligently to perfect your artwork. This service
+                is ideal for updating outdated graphics, correcting errors, or
+                simply enhancing the visual appeal of your vector files.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="fileFormat" class="py-16">
+        <div class="mx-auto px-4 w-full lg:w-4/5">
+          <div class="flex flex-col md:flex-row items-center gap-16">
+            <div class="w-full md:w-1/2 mb-8 md:mb-0 space-y-5">
+              <h2 class="text-2xl md:text-3xl font-medium mb-4">
+                VECTOR FILE FORMAT CONVERSION
+              </h2>
+              <p class="mb-4 text-sm md:text-xs text-justify">
+                Our vector file format conversion service ensures your vector
+                graphics are available in the formats you need. We expertly
+                convert your existing vector files into different formats, such
+                as SVG, AI, EPS, PDF, and more, ensuring compatibility with
+                various software and applications. This service is ideal for
+                clients who need their artwork in multiple formats for different
+                uses, providing flexibility and convenience without compromising
+                quality. Trust us to deliver accurate, high-quality conversions
+                for all your vector file needs.
+              </p>
+            </div>
+            <div class="w-full lg:w-1/2 flex justify-center">
+              <img
+                src="/assets/Images/OurServices/VectorServices/fileformat.jpg"
+                alt="sabionAboutImg"
+                class="w-10/12 mx-auto rounded-lg"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="OurServices" class="py-20 p-3 md:p-8 space-y-8">
+        <h1 class="text-center capitalize text-4xl">Our Services</h1>
+        <div class="mx-auto w-4/5 grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div class="rounded-b-lg bg-gray-700">
+            <img
+              src="/assets/Images/HomeImages/OurServicesImages/digitizing.jpg"
+              class="w-full h-full rounded-b-lg"
+              alt=""
+            />
+            <p class="text-2xl text-white text-center py-1">Digitizing</p>
+          </div>
+          <div class="rounded-b-lg bg-gray-700">
+            <img
+              src="/assets/Images/HomeImages/OurServicesImages/vectorArt.jpg"
+              class="w-full h-full rounded-b-lg"
+              alt=""
+            />
+            <p class="text-2xl text-white text-center py-4">Vector Art</p>
+          </div>
+          <div class="rounded-b-lg bg-gray-700">
+            <img
+              src="/assets/Images/HomeImages/OurServicesImages/customPatch.jpg"
+              class="w-full h-full rounded-b-lg"
+              alt=""
+            />
+            <p class="text-2xl text-white text-center py-1">Custom Patch</p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="bg-gray-900 text-white mt-24">
+      <div class="container mx-auto px-4 py-8">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+          <!-- Logo and Description -->
+          <div
+            class="col-span-1 md:col-span-2 lg:col-span-1 space-y-4 md:space-y-8"
+          >
+            <h1 class="text-2xl font-semibold text-white">
+              <a href="/index.html">Sabion Embroidery</a>
+            </h1>
+            <p class="text-xs md:text-sm mb-4">
+              SabionEmbroidery is the embroidery digitizing services provider
+              which offers the best embroidery digitizing, vector art and custom
+              patches services with fastest turnaround time and extra ordinary
+              quality.
+            </p>
+          </div>
+
+          <!-- Quick Links 1 -->
+          <div>
+            <h3 class="text-base md:text-lg font-semibold mb-4">QUICK LINKS</h3>
+            <ul class="space-y-2 text-sm md:text-base">
+              <li>
+                <a
+                  href="#"
+                  class="hover:text-yellow-500 transition duration-300"
+                  >HOME</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="hover:text-yellow-500 transition duration-300"
+                  >ABOUT US</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="hover:text-yellow-500 transition duration-300"
+                  >DIGITIZING SERVICES</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="hover:text-yellow-500 transition duration-300"
+                  >VECTOR SERVICES</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="hover:text-yellow-500 transition duration-300"
+                  >PATCH SERVICES</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="hover:text-yellow-500 transition duration-300"
+                  >PORTFOLIO</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <!-- Quick Links 2 -->
+          <div>
+            <h3 class="text-base md:text-lg font-semibold mb-4">QUICK LINKS</h3>
+            <ul class="space-y-2 text-sm md:text-base">
+              <li>
+                <a
+                  href="#"
+                  class="hover:text-yellow-500 transition duration-300"
+                  >PRICING</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="hover:text-yellow-500 transition duration-300"
+                  >CONTACT US</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="hover:text-yellow-500 transition duration-300"
+                  >PRIVACY POLICY</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="hover:text-yellow-500 transition duration-300"
+                  >TERMS & CONDITION</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="hover:text-yellow-500 transition duration-300"
+                  >LOGIN</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="hover:text-yellow-500 transition duration-300"
+                  >REGISTER</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <!-- Contact Details -->
+          <div>
+            <h3 class="text-base md:text-lg font-semibold mb-4">
+              CONTACT DETAILS
+            </h3>
+            <p class="mb-2 text-sm md:text-base">PHONE: +1 213 261 7530</p>
+            <p class="mb-2 text-sm md:text-base">
+              EMAIL: INFO@SabionEmbroidery.COM
+            </p>
+            <p class="mb-2 text-sm md:text-base">
+              SKYPE: INFO@SabionEmbroidery.COM
+            </p>
+            <p class="text-xs md:text-sm mt-4">POWERED BY SABION</p>
+          </div>
+        </div>
+
+        <!-- Payment Methods -->
+        <div class="mt-8 border-t border-gray-700 pt-8">
+          <h3 class="text-base md:text-lg font-semibold mb-4 text-center">
+            PAYMENT METHODS
+          </h3>
+          <div class="flex flex-wrap justify-center gap-4">
+            <img
+              src="/assets/Images/Footer/Paypal.png"
+              class="w-24 rounded-lg"
+              alt=""
+            />
+          </div>
+        </div>
+      </div>
+
+      <!-- Copyright -->
+      <div class="bg-yellow-700 py-4">
+        <p class="text-center text-xs md:text-sm">
+          2024 ©SabionEmbroidery, All right reserved.
+        </p>
+      </div>
+    </footer>
+  </body>
+  <script src="/assets/Js/script.js"></script>
+</html>
