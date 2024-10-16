@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio | ~ Sabion Embroidery</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+    <link rel="stylesheet" href="/assets/css/style.css" />
+  </head>
+  <body class="bg-black text-white" x-data="{ activeTab: 'quote' }">
+    <header class="fixed w-full bg-[#01161e] h-auto md:h-20 z-50 flex flex-col justify-center border-0">
+      <nav class="container mx-auto px-4 py-3 flex flex-wrap justify-between items-center">
+        <a href="/index.html" class="text-lg md:text-2xl font-medium text-white text-center">Sabion Embroidery</a>
+        <div class="hidden md:flex space-x-4 lg:space-x-14 text-sm lg:text-base font-light uppercase">
+          <a href="/index.html" class="hover:text-[#eff6e0]">Home</a>
+          <a href="/about.html" class="hover:text-[#eff6e0]">About</a>
+          <div class="complex-dropdown-container" id="uniqueDropdownId123">
+            <span class="hoverable-trigger-text-xyz" id="triggerText987">Services</span>
+            <div class="dropdown-content-abc hidden-content-def" id="dropdownContent456">
+              <a href="/OurServices/embroidery-digitizing.html" class="dropdown-item-text-qwe block py-2">Digitizing</a>
+              <a href="/OurServices/vector-arts.html" class="dropdown-item-text-qwe block py-2">Vector</a>
+              <a href="/OurServices/custom-embroidery-patches.html" class="dropdown-item-text-qwe block py-2">Patches</a>
+            </div>
+          </div>
+          <a href="/pricing-plan.html" class="hover:text-[#eff6e0]">Prices</a>
+          <a href="/portfolio.html" class="hover:text-[#eff6e0]">Portfolio</a>
+          <a href="/contact-us.html" class="hover:text-[#eff6e0]">Send Quote</a>
+        </div>
+        <div class="hidden md:flex items-center justify-normal gap-x-2">
+          <img src="https://www.SabionEmbroidery.net/new_website_assests/images/icons/Register.png" class="w-7" alt="" />
+          <span class="text-white">ACCOUNT</span>
+        </div>
+        <button id="menu-btn" class="md:hidden text-white">
+          <i class="fas fa-bars"></i>
+        </button>
+      </nav>
+      <div id="mobile-menu" class="hidden md:hidden bg-black w-full">
+        <a href="#services" class="block py-2 px-4 text-sm hover:bg-gray-700">Services</a>
+        <div class="pl-4">
+          <a href="#digitizing" class="block py-2 px-4 text-sm hover:bg-gray-700">Digitizing</a>
+          <a href="#vector" class="block py-2 px-4 text-sm hover:bg-gray-700">Vector</a>
+          <a href="#patches" class="block py-2 px-4 text-sm hover:bg-gray-700">Patches</a>
+        </div>
+        <a href="/about.html" class="block py-2 px-4 text-sm hover:bg-gray-700">About</a>
+        <a href="/pricing-plan.html" class="block py-2 px-4 text-sm hover:bg-gray-700">Pricing</a>
+        <a href="/portfolio.html" class="block py-2 px-4 text-sm hover:bg-gray-700">Portfolio</a>
+        <a href="/contact-us.html" class="block py-2 px-4 text-sm hover:bg-gray-700">Send Quote</a>
+      </div>
+    </header>
+
+    <main>
+      <section id="hero" class="h-[50vh] flex items-center justify-center bg-cover bg-center" style="background-image: url('/assets/Images/Contact/bannerBackground.jpg');">
+        <div class="flex items-center justify-center w-full h-full bg-[#0000009f]">
+          <div class="text-center px-4 space-y-5 w-3/5 mx-auto">
+            <h1 class="text-3xl md:text-4xl lg:text-7xl font-normal mb-4 uppercase">Portfolio</h1>
+            <div class="breadcrumbs text-white text-center text-sm">
+              <span class="font-semibold">HOME</span> / PORTFOLIO
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <div class="container mx-auto px-4 py-12 max-w-6xl bg-black text-white">
+        <div class="flex justify-center mb-8">
+          <div class="bg-gray-800 rounded-full p-1 flex">
+            <button @click="activeTab = 'vector'" :class="{ 'bg-yellow-600 text-white': activeTab === 'vector', 'text-gray-300': activeTab !== 'vector' }" class="px-6 py-2 rounded-full transition-colors duration-200">Vector</button>
+            <button @click="activeTab = 'digitizing'" :class="{ 'bg-yellow-600 text-white': activeTab === 'digitizing', 'text-gray-300': activeTab !== 'digitizing' }" class="px-6 py-2 rounded-full transition-colors duration-200">Digitizing</button>
+            <button @click="activeTab = 'patches'" :class="{ 'bg-yellow-600 text-white': activeTab === 'patches', 'text-gray-300': activeTab !== 'patches' }" class="px-6 py-2 rounded-full transition-colors duration-200">Patches</button>
+          </div>
+        </div>
+
+        <div x-show="activeTab === 'digitizing'" class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+          <!-- Digitizing Images -->
+          <div class="border-2 border-yellow-600 rounded-lg overflow-hidden">
+            <img src="/placeholder.svg?height=200&width=200" alt="Cartoon character" class="w-full h-full object-cover">
+          </div>
+          <!-- Add more images as needed -->
+        </div>
+
+        <div x-show="activeTab === 'vector'" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+          <div class="bg-gray-800 rounded-lg overflow-hidden p-4">
+            <h3 class="text-yellow-600 text-lg font-bold mb-2">Approval Sheet</h3>
+            <div class="flex space-x-2">
+              <div class="w-1/2">
+                <h4 class="text-sm font-semibold mb-1">Customer Artwork</h4>
+                <img src="/placeholder.svg?height=150&width=150" alt="Customer artwork" class="w-full h-auto">
+              </div>
+              <div class="w-1/2">
+                <h4 class="text-sm font-semibold mb-1">Vector Proof</h4>
+                <img src="/placeholder.svg?height=150&width=150" alt="Vector proof" class="w-full h-auto">
+              </div>
+            </div>
+            <p class="text-xs text-gray-400 mt-2">NOTE: Tri Star is not responsible for any typographical errors that are overlooked and later approved by the customer.</p>
+          </div>
+          <!-- Repeat for more approval sheets -->
+        </div>
+
+        <div x-show="activeTab === 'patches'" class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+          <!-- Patches Images -->
+          <div class="border-2 border-yellow-600 rounded-lg overflow-hidden">
+            <img src="/placeholder.svg?height=200&width=200" alt="UTA Trax patches" class="w-full h-full object-cover">
+          </div>
+          <!-- Add more images as needed -->
+        </div>
+      </div>
+    </main>
+
+    <footer class="bg-gray-900 text-white">
+      <div class="container mx-auto px-4 py-8">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+          <!-- Logo and Description -->
+          <div class="col-span-1 md:col-span-2 lg:col-span-1 space-y-4 md:space-y-8">
+            <h1 class="text-2xl font-semibold text-white">
+              <a href="/index.html">Sabion Embroidery</a>
+            </h1>
+            <p class="text-xs md:text-sm mb-4">SabionEmbroidery is the embroidery digitizing services provider which offers the best embroidery digitizing, vector art and custom patches services with fastest turnaround time and extra ordinary quality.</p>
+          </div>
+
+          <!-- Quick Links 1 -->
+          <div>
+            <h3 class="text-base md:text-lg font-semibold mb-4">QUICK LINKS</h3>
+            <ul class="space-y-2 text-sm md:text-base">
+              <li><a href="/about.html" class="hover:text-yellow-600">About</a></li>
+              <li><a href="/pricing-plan.html" class="hover:text-yellow-600">Pricing</a></li>
+              <li><a href="/contact-us.html" class="hover:text-yellow-600">Send Quote</a></li>
+            </ul>
+          </div>
+
+          <!-- Quick Links 2 -->
+          <div>
+            <h3 class="text-base md:text-lg font-semibold mb-4">SERVICES</h3>
+            <ul class="space-y-2 text-sm md:text-base">
+              <li><a href="/OurServices/embroidery-digitizing.html" class="hover:text-yellow-600">Digitizing</a></li>
+              <li><a href="/OurServices/vector-arts.html" class="hover:text-yellow-600">Vector</a></li>
+              <li><a href="/OurServices/custom-embroidery-patches.html" class="hover:text-yellow-600">Patches</a></li>
+            </ul>
+          </div>
+
+          <!-- Contact Information -->
+          <div>
+            <h3 class="text-base md:text-lg font-semibold mb-4">CONTACT</h3>
+            <ul class="space-y-2 text-sm md:text-base">
+              <li>Email: <a href="mailto:support@sabionembroidery.net" class="hover:text-yellow-600">support@sabionembroidery.net</a></li>
+              <li>Phone: <a href="tel:+1234567890" class="hover:text-yellow-600">+123 456 7890</a></li>
+              <li>Address: 123 Embroidery St, Design City, CA 12345</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="bg-gray-800 text-center py-4">
+        <p class="text-xs">© 2024 Sabion Embroidery. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <script>
+      const menuBtn = document.getElementById('menu-btn');
+      const mobileMenu = document.getElementById('mobile-menu');
+
+      menuBtn.addEventListener('click', () => {
+        mobileMenu.classList.toggle('hidden');
+      });
+    </script>
+  </body>
+</html>
