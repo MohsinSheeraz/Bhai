@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Form</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+    <link rel="stylesheet" href="/assets/css/style.css" />
+  </head>
+  <body class="bg-black text-white" x-data="{ activeTab: 'quote' }">
+    <header
+      class="fixed w-full bg-[#01161e] h-auto md:h-20 z-50 flex flex-col justify-center border-0"
+    >
+      <nav
+        class="container mx-auto px-4 py-3 flex flex-wrap justify-between items-center"
+      >
+        <a
+          href="/index.html"
+          class="text-lg md:text-2xl font-medium text-white text-center"
+          >Sabion Embroidery</a
+        >
+        <div
+          class="hidden md:flex space-x-4 lg:space-x-14 text-sm lg:text-base font-light uppercase"
+        >
+          <a href="/index.html" class="hover:text-[#eff6e0]">Home</a>
+          <a href="/about.html" class="hover:text-[#eff6e0]">About</a>
+          <div class="complex-dropdown-container" id="uniqueDropdownId123">
+            <span class="hoverable-trigger-text-xyz" id="triggerText987"
+              >Services</span
+            >
+            <div
+              class="dropdown-content-abc hidden-content-def"
+              id="dropdownContent456"
+            >
+              <a
+                href="/OurServices/embroidery-digitizing.html"
+                class="dropdown-item-text-qwe block py-2"
+                >Digitizing</a
+              >
+              <a
+                href="/OurServices/vector-arts.html"
+                class="dropdown-item-text-qwe block py-2"
+                >Vector</a
+              >
+              <a
+                href="/OurServices/custom-embroidery-patches.html"
+                class="dropdown-item-text-qwe block py-2"
+                >Patches</a
+              >
+            </div>
+          </div>
+          <a href="/pricing-plan.html" class="hover:text-[#eff6e0]">Prices</a>
+          <a href="#portfolio" class="hover:text-[#eff6e0]">Portfolio</a>
+          <a href="/contact-us.html" class="hover:text-[#eff6e0]">Send Quote</a>
+        </div>
+        <div class="hidden md:flex items-center justify-normal gap-x-2">
+          <img
+            src="https://www.SabionEmbroidery.net/new_website_assests/images/icons/Register.png"
+            class="w-7"
+            alt=""
+          />
+          <span class="text-white">ACCOUNT</span>
+        </div>
+        <button id="menu-btn" class="md:hidden text-white">
+          <i class="fas fa-bars"></i>
+        </button>
+      </nav>
+      <div id="mobile-menu" class="hidden md:hidden bg-black w-full">
+        <a href="#services" class="block py-2 px-4 text-sm hover:bg-gray-700"
+          >Services</a
+        >
+        <div class="pl-4">
+          <a
+            href="#digitizing"
+            class="block py-2 px-4 text-sm hover:bg-gray-700"
+            >Digitizing</a
+          >
+          <a href="#vector" class="block py-2 px-4 text-sm hover:bg-gray-700"
+            >Vector</a
+          >
+          <a href="#patches" class="block py-2 px-4 text-sm hover:bg-gray-700"
+            >Patches</a
+          >
+        </div>
+        <a href="/about.html" class="block py-2 px-4 text-sm hover:bg-gray-700"
+          >About</a
+        >
+        <a
+          href="/pricing-plan.html"
+          class="block py-2 px-4 text-sm hover:bg-gray-700"
+          >Pricing</a
+        >
+        <a
+          href="/contact-us.html"
+          class="block py-2 px-4 text-sm hover:bg-gray-700"
+          >Send Quote</a
+        >
+      </div>
+    </header>
+
+    <main>
+      <section
+        id="hero"
+        class="h-[50vh] flex items-center justify-center bg-cover bg-center"
+        style="
+          background-image: url('/assets/Images/Contact/bannerBackground.jpg');
+        "
+      >
+        <div
+          class="flex items-center justify-center w-full h-full bg-[#0000009f]"
+        >
+          <div class="text-center px-4 space-y-5 w-3/5 mx-auto">
+            <h1
+              class="text-3xl md:text-4xl lg:text-7xl font-normal mb-4 uppercase"
+            >
+              About Us
+            </h1>
+
+            <div class="breadcrumbs text-white text-center text-sm">
+              <span class="font-semibold">HOME</span> / ABOUT US
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <div class="container mx-auto px-4 py-12 max-w-6xl bg-black text-white">
+        <div class="flex justify-center mb-8">
+          <div class="bg-gray-800 rounded-full p-1 flex">
+            <button
+              @click="activeTab = 'quote'"
+              :class="{ 'bg-yellow-600 text-white': activeTab === 'quote', 'text-gray-300': activeTab !== 'quote' }"
+              class="px-6 py-2 rounded-full transition-colors duration-200"
+            >
+              Send Quick Quote
+            </button>
+            <button
+              @click="activeTab = 'comment'"
+              :class="{ 'bg-yellow-600 text-white': activeTab === 'comment', 'text-gray-300': activeTab !== 'comment' }"
+              class="px-6 py-2 rounded-full transition-colors duration-200"
+            >
+              Write a Comment
+            </button>
+          </div>
+        </div>
+
+        <div class="bg-gray-900 rounded-lg overflow-hidden">
+          <div class="flex flex-col md:flex-row">
+            <div class="w-full md:w-1/2 p-8">
+              <h2
+                x-text="activeTab === 'quote' ? 'Quick Send Quote' : 'Write a Comment'"
+                class="text-3xl font-bold mb-6"
+              ></h2>
+              <form>
+                <div class="space-y-4">
+                  <input
+                    type="text"
+                    placeholder="Your Name"
+                    class="w-full bg-transparent border-b border-gray-600 py-2 focus:outline-none focus:border-yellow-600"
+                  />
+                  <input
+                    type="email"
+                    placeholder="Email Address"
+                    class="w-full bg-transparent border-b border-gray-600 py-2 focus:outline-none focus:border-yellow-600"
+                  />
+                  <input
+                    x-show="activeTab === 'quote'"
+                    type="tel"
+                    placeholder="Phone Number"
+                    class="w-full bg-transparent border-b border-gray-600 py-2 focus:outline-none focus:border-yellow-600"
+                  />
+                  <input
+                    x-show="activeTab === 'comment'"
+                    type="text"
+                    placeholder="Subject"
+                    class="w-full bg-transparent border-b border-gray-600 py-2 focus:outline-none focus:border-yellow-600"
+                  />
+                  <textarea
+                    placeholder="Write a Message"
+                    rows="4"
+                    class="w-full bg-transparent border-b border-gray-600 py-2 focus:outline-none focus:border-yellow-600"
+                  ></textarea>
+                  <div
+                    x-show="activeTab === 'quote'"
+                    class="flex bg-yellow-600 rounded"
+                  >
+                    <button class="px-4 py-2 text-black">Browse...</button>
+                    <span class="flex-grow py-2 px-4 text-gray-300"
+                      >No file selected.</span
+                    >
+                  </div>
+                  <div class="flex items-center space-x-2">
+                    <input
+                      type="checkbox"
+                      id="recaptcha"
+                      class="rounded text-yellow-600 focus:ring-yellow-600"
+                    />
+                    <label for="recaptcha" class="text-sm text-gray-300"
+                      >I'm not a robot</label
+                    >
+                  </div>
+                  <button
+                    type="submit"
+                    class="bg-yellow-600 text-black px-6 py-2 rounded hover:bg-yellow-500 transition-colors duration-200"
+                  >
+                    Send Message
+                  </button>
+                </div>
+              </form>
+            </div>
+            <div class="w-full md:w-1/2">
+              <img
+                src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-8TTVTI3cnhWRxfrqJgWUWQVEN6xdTy.png"
+                alt="Person working on laptop"
+                class="w-full h-full object-cover"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+  <script src="assets/Js/script.js"></script>
+</html>
