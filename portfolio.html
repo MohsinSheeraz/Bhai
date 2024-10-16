@@ -69,41 +69,53 @@
             <button @click="activeTab = 'patches'" :class="{ 'bg-yellow-600 text-white': activeTab === 'patches', 'text-gray-300': activeTab !== 'patches' }" class="px-6 py-2 rounded-full transition-colors duration-200">Patches</button>
           </div>
         </div>
-
-        <div x-show="activeTab === 'digitizing'" class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
-          <!-- Digitizing Images -->
-          <div class="border-2 border-yellow-600 rounded-lg overflow-hidden">
-            <img src="/placeholder.svg?height=200&width=200" alt="Cartoon character" class="w-full h-full object-cover">
+      
+        <!-- Digitizing Section -->
+        <div x-show="activeTab === 'digitizing'" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+          <div class="border-2 border-yellow-600 rounded-lg overflow-hidden shadow-lg transform transition duration-300 hover:scale-105">
+            <img src="https://via.placeholder.com/300x200.png?text=Digitizing+1" alt="Digitizing Example 1" class="w-full h-auto object-cover">
           </div>
-          <!-- Add more images as needed -->
-        </div>
-
-        <div x-show="activeTab === 'vector'" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-          <div class="bg-gray-800 rounded-lg overflow-hidden p-4">
-            <h3 class="text-yellow-600 text-lg font-bold mb-2">Approval Sheet</h3>
-            <div class="flex space-x-2">
-              <div class="w-1/2">
-                <h4 class="text-sm font-semibold mb-1">Customer Artwork</h4>
-                <img src="/placeholder.svg?height=150&width=150" alt="Customer artwork" class="w-full h-auto">
-              </div>
-              <div class="w-1/2">
-                <h4 class="text-sm font-semibold mb-1">Vector Proof</h4>
-                <img src="/placeholder.svg?height=150&width=150" alt="Vector proof" class="w-full h-auto">
-              </div>
-            </div>
-            <p class="text-xs text-gray-400 mt-2">NOTE: Tri Star is not responsible for any typographical errors that are overlooked and later approved by the customer.</p>
+          <div class="border-2 border-yellow-600 rounded-lg overflow-hidden shadow-lg transform transition duration-300 hover:scale-105">
+            <img src="https://via.placeholder.com/300x200.png?text=Digitizing+2" alt="Digitizing Example 2" class="w-full h-auto object-cover">
           </div>
-          <!-- Repeat for more approval sheets -->
+          <div class="border-2 border-yellow-600 rounded-lg overflow-hidden shadow-lg transform transition duration-300 hover:scale-105">
+            <img src="https://via.placeholder.com/300x200.png?text=Digitizing+3" alt="Digitizing Example 3" class="w-full h-auto object-cover">
+          </div>
         </div>
-
+      
+        <!-- Vector Section -->
+        <div x-show="activeTab === 'vector'" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <div class="bg-gray-800 rounded-lg overflow-hidden p-4 shadow-md">
+            <h3 class="text-yellow-600 text-lg font-bold mb-2">Vector Art 1</h3>
+            <img src="https://via.placeholder.com/300x200.png?text=Vector+1" alt="Vector Art 1" class="w-full h-auto">
+          </div>
+          <div class="bg-gray-800 rounded-lg overflow-hidden p-4 shadow-md">
+            <h3 class="text-yellow-600 text-lg font-bold mb-2">Vector Art 2</h3>
+            <img src="https://via.placeholder.com/300x200.png?text=Vector+2" alt="Vector Art 2" class="w-full h-auto">
+          </div>
+          <div class="bg-gray-800 rounded-lg overflow-hidden p-4 shadow-md">
+            <h3 class="text-yellow-600 text-lg font-bold mb-2">Vector Art 3</h3>
+            <img src="https://via.placeholder.com/300x200.png?text=Vector+3" alt="Vector Art 3" class="w-full h-auto">
+          </div>
+        </div>
+      
+        <!-- Patches Section -->
         <div x-show="activeTab === 'patches'" class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
-          <!-- Patches Images -->
-          <div class="border-2 border-yellow-600 rounded-lg overflow-hidden">
-            <img src="/placeholder.svg?height=200&width=200" alt="UTA Trax patches" class="w-full h-full object-cover">
+          <div class="border-2 border-yellow-600 rounded-lg overflow-hidden shadow-lg transform transition duration-300 hover:scale-105">
+            <img src="https://via.placeholder.com/200x200.png?text=Patches+1" alt="Patches Example 1" class="w-full h-full object-cover">
           </div>
-          <!-- Add more images as needed -->
+          <div class="border-2 border-yellow-600 rounded-lg overflow-hidden shadow-lg transform transition duration-300 hover:scale-105">
+            <img src="https://via.placeholder.com/200x200.png?text=Patches+2" alt="Patches Example 2" class="w-full h-full object-cover">
+          </div>
+          <div class="border-2 border-yellow-600 rounded-lg overflow-hidden shadow-lg transform transition duration-300 hover:scale-105">
+            <img src="https://via.placeholder.com/200x200.png?text=Patches+3" alt="Patches Example 3" class="w-full h-full object-cover">
+          </div>
+          <div class="border-2 border-yellow-600 rounded-lg overflow-hidden shadow-lg transform transition duration-300 hover:scale-105">
+            <img src="https://via.placeholder.com/200x200.png?text=Patches+4" alt="Patches Example 4" class="w-full h-full object-cover">
+          </div>
         </div>
       </div>
+      
     </main>
 
     <footer class="bg-gray-900 text-white">
